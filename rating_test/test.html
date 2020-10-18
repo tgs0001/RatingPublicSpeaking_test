@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+	<link rel="stylesheet" href="mytest.css">
+  </head>
+  <body>
+  
+  <form action="check.html" method="GET">
+  <label for="name">Name Of Rater:</label><br>
+  <input type="text" id="name" name="name" value="" size="30" required><br>
+  <p>
+  <input type="submit" value="Choose from Your Local Machine" /><br>
+  </p>
+  </form>
+  
+  
+  
+  
+  <label for="link">Youtube Video Link:</label><br>
+  <input type="text" id="link" name="link" value="" size="100">
+  <button onclick="goFunction()">GO</button><br>
+  
+
+  
+  
+  <p id="demo"></p>
+
+    <div id="video-placeholder"></div>
+	<p>
+	<button id="proceed" onClick="processRating()">Proceed</button>
+    <button id="pause">Pause</button>
+	<button onClick="window.location.reload();">Start New One</button>
+	</p>
+
+
+  <select name="work_days" id="id_work_days" multiple>
+  <option value="joy">JOY</option>
+  <option value="confident">CONFIDENT</option>
+  <option value="analytical">ANALYTICAL</option>
+  <option value="tentative">TENTATIVE</option>
+  <option value="sadness">SADNESS</option>
+  <option value="anger">ANGER</option>
+  <option value="fear">FEAR</option>
+</select>
+<p>
+<label id="ratings">Your Ratings:</label>
+<form >
+<textarea id="rating_text" name="rating_text" rows="4" cols="150">
+Minute    Rating
+  </textarea>
+  <br><br>
+  <input type="button" value="Get As Text File" onClick="processText()">
+</form>
+</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+	<script src="testScript.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="mycheck.css">
+  </head>
+<body>
+<label>Name Of Rater:</label>
+<label id="demo"></label>
+<div id="message"></div>
+<input type="file" accept="video/*"/>
+<video id="myVideo" width="800" height="390" controls autoplay></video>
+
+
+<p>
+<button id="proceed" onClick="proceedProcess()">Proceed</button>
+<button id="pause" onclick="pauseProcess()">Pause</button>
+</p>
+
+
+  <select name="work_days" id="id_work_days" multiple>
+  <option value="joy">JOY</option>
+  <option value="confident">CONFIDENT</option>
+  <option value="analytical">ANALYTICAL</option>
+  <option value="tentative">TENTATIVE</option>
+  <option value="sadness">SADNESS</option>
+  <option value="anger">ANGER</option>
+  <option value="fear">FEAR</option>
+</select>
+
+<p>
+<label id="ratings">Your Ratings:</label>
+<form >
+<textarea id="rating_text" name="rating_text" rows="4" cols="150">
+Minute    Rating
+  </textarea>
+  <br><br>
+  <input type="button" value="Get As Text File" onClick="processText()">
+</form>
+</p>
+
+<script src="checkScript.js"></script>
+
+
+</body>
+</html>
